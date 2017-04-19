@@ -1,0 +1,167 @@
+body {
+  border: 1px solid gray;
+}
+
+header {
+  margin-top: 0;
+  padding: 1rem;
+  background: #434a52;
+  border-bottom: 3px solid #eb8100;
+}
+
+header > h4 {
+  flex: 2;
+  margin: 0;
+  padding-left: 20px;
+}
+
+header > nav {
+  flex: 1;
+}
+
+#custom-nav {
+  list-style: none;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+#custom-nav li {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.callout {
+  font-size: 1.25em;
+  font-weight: bold;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+  color: rgb(255, 169, 73);
+  width: 50%;
+}
+
+section#home {
+  padding-top: 8rem;
+}
+
+section#about,
+section#portfolio,
+section#skills {
+  margin-top: 8rem;
+}
+
+#about a:hover {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+.card {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.skill-stat {
+  background: #434A52;
+}
+
+.skill-stat h3 {
+  margin-bottom: 20px;
+}
+
+div#right-aligned-skill-stat {
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 0;
+}
+
+.skillshot {
+  background: #434a52 url(http://yfile.news.yorku.ca/files/2016/10/Barbara_oakley.jpg) no-repeat center;
+  background-size: cover;
+  border-top: 10px solid #ffa949;
+  border-radius: 10px;
+  height: 150px;
+}
+
+.skillshot > a {
+  color: white;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+}
+
+.skillshot > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.skillshot a > p:hover {
+  background: #eb8100;
+}
+
+.skillshot > img {
+  width: 75px;
+  height: 75px;
+}
+
+.card-title {
+  padding: 10px 0;
+  color: #fff;
+}
+
+.skill-board {
+  border-top: 10px solid #eb8100;
+  border-radius: 10px;
+}
+
+.skill-board > .row {
+  border-bottom: 3px solid gray;
+  border-left: 3px solid gray;
+  border-right: 3px solid gray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.skill-stat {
+  border-bottom-left-radius: 7px;
+}
+
+
+
+.jumbotron {
+    background: linear-gradient(#ffa949, transparent 90%), linear-gradient(0deg, #fff, transparent), #ffa949 url(../img/mountains.jpg) no-repeat center;
+    height: 400px;
+    background-size: cover;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 575px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header > h4{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-left: 0;
+  }
+  header > nav {
+    width: 100%;
+  }
+  nav > ul {
+    justify-content: space-around;
+  }
+  ul#custom-nav li {
+    text-align: center;
+  }
+  .jumbotron {
+    margin: 5rem 0;
+  }
+  .skillshot {
+    height: 200px;
+    width: 65%;
+  }
+}
